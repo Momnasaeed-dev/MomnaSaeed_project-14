@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-utensils"></i>
+        FoodieHub
+    </div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Delicious Food Delivered Fast</h1>
+
+        <p>
+            Order your favourite meals with just one click.
+        </p>
+
+        <button id="orderBtn">
+            Order Now
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search">
+
+    <input
+    type="text"
+    id="searchFood"
+    placeholder="Search Food">
+
+    <select id="category">
+
+        <option value="all">All Categories</option>
+
+        <option value="Pizza">Pizza</option>
+
+        <option value="Burger">Burger</option>
+
+        <option value="Drinks">Drinks</option>
+
+        <option value="Dessert">Dessert</option>
+
+    </select>
+
+</section>
+
+<!-- ================= MENU ================= -->
+
+<section id="menu">
+
+<h2>Our Menu</h2>
+
+<div id="foodContainer" class="food-container">
+
+<!-- Dynamic Cards -->
+
+</div>
+
+</section>
+
+<!-- ================= CART ================= -->
+
+<section id="cart">
+
+<h2>Shopping Cart</h2>
+
+<div id="cartItems">
+
+<p>No items added.</p>
+
+</div>
+
+<h3>
+
+Total:
+<span id="totalPrice">$0</span>
+
+</h3>
+
+<button id="checkoutBtn">
+
+Checkout
+
+</button>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+<p>
+
+Restaurant Ordering System © 2026
+
+</p>
+
+<p>
+
+Developed by <b>Momna Saeed</b>
+
+</p>
+
+</footer>
+
+<!-- ES6 MODULE -->
+
+<script type="module" src="./src/app.js"></script>
+
+</body>
+</html>
